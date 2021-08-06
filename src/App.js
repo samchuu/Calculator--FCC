@@ -185,7 +185,7 @@ function App() {
     </div>
   );
 }
-//try
+
 // console.log(inputText[inputText.length - 1]); to get the last character of input
 // GIVEN there is no number in the display, WHEN I press "0" THEN it should not add zero to the display
 // GIVEN there are non-zero numbers in the display, WHEN I press "0" THEN it should add zero to the display
