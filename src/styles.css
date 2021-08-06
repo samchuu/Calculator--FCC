@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 320px;
+  height: 70px;
+  margin: 15rem auto;
+}
+
+body {
+  background-color: #394664;
+  font-family: "Spartan", sans-serif;
+}
+
+.rows {
+  position: relative;
+  top: 10px;
+}
+.first-row,
+.second-row,
+.third-row,
+.fourth-row,
+.last-row {
+  width: 100%;
+  display: flex;
+  border: 3px solid #222d44;
+  justify-content: center;
+}
+.first-row {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.last-row {
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+/* individual items */
+#clear {
+  width: 160px;
+  background-color: #62729a;
+}
+
+#clear-all {
+  background-color: #62729a;
+}
+
+#zero {
+  width: 160px;
+}
+span {
+  position: relative;
+  top: 12px;
+  right: 15px;
+}
+#display {
+  background-color: #171f33;
+  border-radius: 8px;
+  height: 70px;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+button {
+  width: 80px;
+  height: 63px;
+  border: 8px solid #232d44;
+  background-color: #e9e3db;
+  cursor: pointer;
+}
+
+.operators {
+  background-color: #a5a5a5;
+}
+
+h1 {
+  text-align: start;
+  margin-bottom: 10px;
+  color: whitesmoke;
+  font-size: 28px;
+}
+
+.input-value {
+  position: relative;
+  padding: 20px;
+  font-size: 32px;
+}
+
+#equals {
+  background-color: #d13f30;
+}

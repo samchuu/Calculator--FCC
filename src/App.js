@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./components/styles.css";
+import "./styles.css";
 import { evaluate } from "mathjs";
 
 function App() {
@@ -51,7 +51,7 @@ function App() {
   return (
     <div className="App">
       <div className="container">
-        <h1>The Ultimate Calculator</h1>
+        <h1>calc</h1>
         <div className="input-value" id="display">
           {inputText}
         </div>
