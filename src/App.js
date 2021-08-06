@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import "./components/styles.css";
 import { evaluate } from "mathjs";
-// console.log(inputText[inputText.length - 1]); to get the last character of input
 
 function App() {
   const [inputText, setInputText] = useState("");
@@ -186,25 +185,8 @@ function App() {
     </div>
   );
 }
-
+// console.log(inputText[inputText.length - 1]); to get the last character of input
 // GIVEN there is no number in the display, WHEN I press "0" THEN it should not add zero to the display
 // GIVEN there are non-zero numbers in the display, WHEN I press "0" THEN it should add zero to the display
 
 export default App;
-// if (symbol === "+" || symbol === "-" || symbol === "*" || symbol === "/") {
-//   setActiveDecimal(false);
-//   if (inputText.endsWith("+")) {
-//     setInputText(inputText.slice(0, inputText.length - 1));
-//   } else if (inputText.endsWith("-")) {
-//     setInputText(inputText.slice(0));
-//   } else if (inputText.endsWith("*")) {
-//     if (inputText.indexOf("-") === inputText.length)
-//       setInputText(inputText.slice(0));
-//   } else if (inputText.endsWith("/")) {
-//     setInputText(inputText.slice(0, inputText.length - 1));
-//   }
-// }
-
-// if (inputText.endsWith("*")) {
-//   setInputText(inputText.slice(0, inputText.length - 1));
-// }
