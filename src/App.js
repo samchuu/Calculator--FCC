@@ -58,7 +58,6 @@ function App() {
 
         <div className="input-value" id="display">
           <div
-            className="input-text"
             className={inputText.length >= 13 ? "decrease-size" : "input-text"}
           >
             {inputText}
