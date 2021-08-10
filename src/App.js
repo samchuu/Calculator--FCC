@@ -5,6 +5,7 @@ import { evaluate } from "mathjs";
 function App() {
   const [inputText, setInputText] = useState("");
   const [activeDecimal, setActiveDecimal] = useState(false);
+  // const [limitReached, setLimitReached] = useState(false);
 
   const onClickHandler = (symbol) => {
     if (inputText.indexOf(0) === 0) {
@@ -12,6 +13,7 @@ function App() {
     }
     if (symbol === "+" || symbol === "-" || symbol === "*" || symbol === "/") {
       setActiveDecimal(false);
+
       if (inputText.endsWith("+")) {
         setInputText(inputText.slice(0, inputText.length));
       } else if (inputText.endsWith("-")) {
@@ -24,7 +26,8 @@ function App() {
   };
 
   const resultHandler = () => {
-    setInputText(evaluate(inputText).toString());
+    let result = evaluate(inputText).toString();
+    setInputText(result.slice(0, 9));
   };
 
   const clearAllHandler = () => {
@@ -52,8 +55,14 @@ function App() {
     <div className="App">
       <div className="container">
         <h1>calc</h1>
+
         <div className="input-value" id="display">
-          {inputText}
+          <div
+            className="input-text"
+            className={inputText.length >= 13 ? "decrease-size" : "input-text"}
+          >
+            {inputText}
+          </div>
         </div>
 
         <div className="rows">

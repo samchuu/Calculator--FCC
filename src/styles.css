@@ -93,6 +93,14 @@ h1 {
   padding: 20px;
   font-size: 32px;
 }
+.input-text {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.decrease-size {
+  font-size: 14px;
+}
 
 #equals {
   background-color: #d13f30;
